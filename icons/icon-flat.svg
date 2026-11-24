@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Spot Agent">
+  <!-- 16 / 32 用：去掉微笑弧（缩到 1px 就成脏点），眼睛与瞳孔按同比例放大，保住"有表情的贴纸" -->
+  <defs><clipPath id="tile"><rect width="1024" height="1024" rx="230"/></clipPath></defs>
+  <rect width="1024" height="1024" rx="230" fill="#F29922"/>
+  <g clip-path="url(#tile)">
+    <g transform="translate(328.53 98.52) scale(1.22)">
+      <path d="M83.17 9.41 L5.94 1149.97 C5.94 1149.97 434.62 724.54 929.59 778.22 Z" fill="#FFC516"/>
+      <circle cx="157.71" cy="394.33" r="88" fill="#FFFFFF"/>
+      <circle cx="148.71" cy="382" r="55" fill="#110E0B"/>
+      <rect x="673.52" y="522.73" width="170" height="170" rx="47" fill="#FFFFFF" transform="translate(-240.4 -476.52) rotate(18.08)"/>
+      <circle cx="279.28" cy="309.94" r="55" fill="#110E0B"/>
+    </g>
+  </g>
+</svg>

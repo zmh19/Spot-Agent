@@ -1,0 +1,14 @@
+# Runtime state written by the bridge
+.spot/
+bridge/roots.json
+
+# Generated bundles (node build.mjs)
+dist/
+
+# Dependencies / tooling
+node_modules/
+*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

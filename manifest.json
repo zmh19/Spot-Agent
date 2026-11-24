@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Spot Agent",
+  "version": "0.2.0",
+  "description": "浏览器内的 Spot Agent：Design 模式可视结构、框选元素、在页面上写请求，落到项目 Prompt 文件交给 Qoder。",
+  "minimum_chrome_version": "102",
+  "permissions": ["storage", "clipboardWrite"],
+  "host_permissions": ["http://127.0.0.1:8787/*"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "file:///*"],
+      "js": [
+        "src/core/ns.js",
+        "src/core/store.js",
+        "src/core/state.js",
+        "src/ui/styles.js",
+        "src/core/overlay.js",
+        "src/core/scan.js",
+        "src/core/render.js",
+        "src/core/hit.js",
+        "src/core/snapshot.js",
+        "src/core/queue.js",
+        "src/core/bridge.js",
+        "src/core/keys.js",
+        "src/core/input.js",
+        "src/ui/panel.js",
+        "src/ui/queueview.js",
+        "src/ui/composer.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

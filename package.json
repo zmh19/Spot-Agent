@@ -1,0 +1,28 @@
+{
+  "name": "spot-agent",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Point at the UI, describe the change, and hand the exact element to your coding agent over MCP.",
+  "license": "MIT",
+  "author": "Zhang Menghan",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "chrome-extension",
+    "mcp",
+    "model-context-protocol",
+    "visual-editing",
+    "design-tools",
+    "qoder"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "build:bookmarklet": "node build.mjs --bookmarklet",
+    "bridge": "node bridge/bridge.mjs",
+    "bridge:http": "node bridge/bridge.mjs --http-only",
+    "verify": "npm run verify:bridge",
+    "verify:ui": "bash dev/verify.sh",
+    "verify:bridge": "node dev/verify-bridge.mjs"
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Spot Agent">
+  <!-- Spot Agent 品牌图形：橙底砖 + 溢出砖角的贴纸三角（左圆右方两颗眼 + 微笑弧） -->
+  <defs><clipPath id="tile"><rect width="1024" height="1024" rx="230"/></clipPath></defs>
+  <rect width="1024" height="1024" rx="230" fill="#F29922"/>
+  <g clip-path="url(#tile)">
+    <g transform="translate(328.53 98.52) scale(1.22)">
+      <path d="M83.17 9.41 L5.94 1149.97 C5.94 1149.97 434.62 724.54 929.59 778.22 Z" fill="#FFC516"/>
+      <circle cx="157.71" cy="394.33" r="75.16" fill="#FFFFFF"/>
+      <circle cx="148.71" cy="367.82" r="40" fill="#110E0B"/>
+      <rect x="690.52" y="539.73" width="136.56" height="136.56" rx="37.94" fill="#FFFFFF" transform="translate(-240.4 -476.52) rotate(18.08)"/>
+      <circle cx="279.28" cy="309.94" r="40" fill="#110E0B"/>
+      <path d="M199.3 573.97 A317.42 317.42 0 0 0 402.24 421.31" fill="none" stroke="#110E0B" stroke-width="46" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
